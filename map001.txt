@@ -1,0 +1,216 @@
+C
+{"py/object": "data.components.physics.position.Position", "py/state": {"py/tuple": [930, 809]}}
+{"py/object": "data.components.physics.rotation.Rotation", "rotation": -456.94505648976286}
+S
+{"py/object": "data.components.segment.segment.SegmentTypeComponent", "py/state": {"py/reduce": [{"py/type": "data.components.segment.segment.SegmentTypes"}, {"py/tuple": [{"py/tuple": [0, 180, 0]}]}]}}
+{"py/object": "data.components.segment.segment.SegmentComponent", "py/state": {"py/tuple": [{"py/tuple": [947, 740]}, {"py/tuple": [843, 740]}]}}
+S
+{"py/object": "data.components.segment.segment.SegmentTypeComponent", "py/state": {"py/reduce": [{"py/type": "data.components.segment.segment.SegmentTypes"}, {"py/tuple": [{"py/tuple": [0, 180, 0]}]}]}}
+{"py/object": "data.components.segment.segment.SegmentComponent", "py/state": {"py/tuple": [{"py/tuple": [843, 740]}, {"py/tuple": [687, 737]}]}}
+S
+{"py/object": "data.components.segment.segment.SegmentTypeComponent", "py/state": {"py/reduce": [{"py/type": "data.components.segment.segment.SegmentTypes"}, {"py/tuple": [{"py/tuple": [0, 180, 0]}]}]}}
+{"py/object": "data.components.segment.segment.SegmentComponent", "py/state": {"py/tuple": [{"py/tuple": [687, 737]}, {"py/tuple": [394, 731]}]}}
+S
+{"py/object": "data.components.segment.segment.SegmentTypeComponent", "py/state": {"py/reduce": [{"py/type": "data.components.segment.segment.SegmentTypes"}, {"py/tuple": [{"py/tuple": [0, 180, 0]}]}]}}
+{"py/object": "data.components.segment.segment.SegmentComponent", "py/state": {"py/tuple": [{"py/tuple": [394, 731]}, {"py/tuple": [202, 719]}]}}
+S
+{"py/object": "data.components.segment.segment.SegmentTypeComponent", "py/state": {"py/reduce": [{"py/type": "data.components.segment.segment.SegmentTypes"}, {"py/tuple": [{"py/tuple": [0, 180, 0]}]}]}}
+{"py/object": "data.components.segment.segment.SegmentComponent", "py/state": {"py/tuple": [{"py/tuple": [202, 719]}, {"py/tuple": [155, 672]}]}}
+S
+{"py/object": "data.components.segment.segment.SegmentTypeComponent", "py/state": {"py/reduce": [{"py/type": "data.components.segment.segment.SegmentTypes"}, {"py/tuple": [{"py/tuple": [0, 180, 0]}]}]}}
+{"py/object": "data.components.segment.segment.SegmentComponent", "py/state": {"py/tuple": [{"py/tuple": [155, 672]}, {"py/tuple": [161, 611]}]}}
+S
+{"py/object": "data.components.segment.segment.SegmentTypeComponent", "py/state": {"py/reduce": [{"py/type": "data.components.segment.segment.SegmentTypes"}, {"py/tuple": [{"py/tuple": [0, 180, 0]}]}]}}
+{"py/object": "data.components.segment.segment.SegmentComponent", "py/state": {"py/tuple": [{"py/tuple": [161, 611]}, {"py/tuple": [241, 581]}]}}
+S
+{"py/object": "data.components.segment.segment.SegmentTypeComponent", "py/state": {"py/reduce": [{"py/type": "data.components.segment.segment.SegmentTypes"}, {"py/tuple": [{"py/tuple": [0, 180, 0]}]}]}}
+{"py/object": "data.components.segment.segment.SegmentComponent", "py/state": {"py/tuple": [{"py/tuple": [241, 581]}, {"py/tuple": [381, 623]}]}}
+S
+{"py/object": "data.components.segment.segment.SegmentTypeComponent", "py/state": {"py/reduce": [{"py/type": "data.components.segment.segment.SegmentTypes"}, {"py/tuple": [{"py/tuple": [0, 180, 0]}]}]}}
+{"py/object": "data.components.segment.segment.SegmentComponent", "py/state": {"py/tuple": [{"py/tuple": [381, 623]}, {"py/tuple": [471, 678]}]}}
+S
+{"py/object": "data.components.segment.segment.SegmentTypeComponent", "py/state": {"py/reduce": [{"py/type": "data.components.segment.segment.SegmentTypes"}, {"py/tuple": [{"py/tuple": [0, 180, 0]}]}]}}
+{"py/object": "data.components.segment.segment.SegmentComponent", "py/state": {"py/tuple": [{"py/tuple": [471, 678]}, {"py/tuple": [608, 684]}]}}
+S
+{"py/object": "data.components.segment.segment.SegmentTypeComponent", "py/state": {"py/reduce": [{"py/type": "data.components.segment.segment.SegmentTypes"}, {"py/tuple": [{"py/tuple": [0, 180, 0]}]}]}}
+{"py/object": "data.components.segment.segment.SegmentComponent", "py/state": {"py/tuple": [{"py/tuple": [608, 684]}, {"py/tuple": [771, 677]}]}}
+S
+{"py/object": "data.components.segment.segment.SegmentTypeComponent", "py/state": {"py/reduce": [{"py/type": "data.components.segment.segment.SegmentTypes"}, {"py/tuple": [{"py/tuple": [0, 180, 0]}]}]}}
+{"py/object": "data.components.segment.segment.SegmentComponent", "py/state": {"py/tuple": [{"py/tuple": [771, 677]}, {"py/tuple": [896, 646]}]}}
+S
+{"py/object": "data.components.segment.segment.SegmentTypeComponent", "py/state": {"py/reduce": [{"py/type": "data.components.segment.segment.SegmentTypes"}, {"py/tuple": [{"py/tuple": [0, 180, 0]}]}]}}
+{"py/object": "data.components.segment.segment.SegmentComponent", "py/state": {"py/tuple": [{"py/tuple": [896, 646]}, {"py/tuple": [923, 584]}]}}
+S
+{"py/object": "data.components.segment.segment.SegmentTypeComponent", "py/state": {"py/reduce": [{"py/type": "data.components.segment.segment.SegmentTypes"}, {"py/tuple": [{"py/tuple": [0, 180, 0]}]}]}}
+{"py/object": "data.components.segment.segment.SegmentComponent", "py/state": {"py/tuple": [{"py/tuple": [923, 584]}, {"py/tuple": [931, 483]}]}}
+S
+{"py/object": "data.components.segment.segment.SegmentTypeComponent", "py/state": {"py/reduce": [{"py/type": "data.components.segment.segment.SegmentTypes"}, {"py/tuple": [{"py/tuple": [0, 180, 0]}]}]}}
+{"py/object": "data.components.segment.segment.SegmentComponent", "py/state": {"py/tuple": [{"py/tuple": [931, 483]}, {"py/tuple": [942, 271]}]}}
+S
+{"py/object": "data.components.segment.segment.SegmentTypeComponent", "py/state": {"py/reduce": [{"py/type": "data.components.segment.segment.SegmentTypes"}, {"py/tuple": [{"py/tuple": [0, 180, 0]}]}]}}
+{"py/object": "data.components.segment.segment.SegmentComponent", "py/state": {"py/tuple": [{"py/tuple": [942, 271]}, {"py/tuple": [932, 48]}]}}
+S
+{"py/object": "data.components.segment.segment.SegmentTypeComponent", "py/state": {"py/reduce": [{"py/type": "data.components.segment.segment.SegmentTypes"}, {"py/tuple": [{"py/tuple": [0, 180, 0]}]}]}}
+{"py/object": "data.components.segment.segment.SegmentComponent", "py/state": {"py/tuple": [{"py/tuple": [932, 48]}, {"py/tuple": [776, 38]}]}}
+S
+{"py/object": "data.components.segment.segment.SegmentTypeComponent", "py/state": {"py/reduce": [{"py/type": "data.components.segment.segment.SegmentTypes"}, {"py/tuple": [{"py/tuple": [0, 180, 0]}]}]}}
+{"py/object": "data.components.segment.segment.SegmentComponent", "py/state": {"py/tuple": [{"py/tuple": [776, 38]}, {"py/tuple": [790, 172]}]}}
+S
+{"py/object": "data.components.segment.segment.SegmentTypeComponent", "py/state": {"py/reduce": [{"py/type": "data.components.segment.segment.SegmentTypes"}, {"py/tuple": [{"py/tuple": [0, 180, 0]}]}]}}
+{"py/object": "data.components.segment.segment.SegmentComponent", "py/state": {"py/tuple": [{"py/tuple": [790, 172]}, {"py/tuple": [778, 348]}]}}
+S
+{"py/object": "data.components.segment.segment.SegmentTypeComponent", "py/state": {"py/reduce": [{"py/type": "data.components.segment.segment.SegmentTypes"}, {"py/tuple": [{"py/tuple": [0, 180, 0]}]}]}}
+{"py/object": "data.components.segment.segment.SegmentComponent", "py/state": {"py/tuple": [{"py/tuple": [778, 348]}, {"py/tuple": [765, 538]}]}}
+S
+{"py/object": "data.components.segment.segment.SegmentTypeComponent", "py/state": {"py/reduce": [{"py/type": "data.components.segment.segment.SegmentTypes"}, {"py/tuple": [{"py/tuple": [0, 180, 0]}]}]}}
+{"py/object": "data.components.segment.segment.SegmentComponent", "py/state": {"py/tuple": [{"py/tuple": [765, 538]}, {"py/tuple": [684, 584]}]}}
+S
+{"py/object": "data.components.segment.segment.SegmentTypeComponent", "py/state": {"py/reduce": [{"py/type": "data.components.segment.segment.SegmentTypes"}, {"py/tuple": [{"py/tuple": [0, 180, 0]}]}]}}
+{"py/object": "data.components.segment.segment.SegmentComponent", "py/state": {"py/tuple": [{"py/tuple": [684, 584]}, {"py/tuple": [595, 552]}]}}
+S
+{"py/object": "data.components.segment.segment.SegmentTypeComponent", "py/state": {"py/reduce": [{"py/type": "data.components.segment.segment.SegmentTypes"}, {"py/tuple": [{"py/tuple": [0, 180, 0]}]}]}}
+{"py/object": "data.components.segment.segment.SegmentComponent", "py/state": {"py/tuple": [{"py/tuple": [595, 552]}, {"py/tuple": [495, 510]}]}}
+S
+{"py/object": "data.components.segment.segment.SegmentTypeComponent", "py/state": {"py/reduce": [{"py/type": "data.components.segment.segment.SegmentTypes"}, {"py/tuple": [{"py/tuple": [0, 180, 0]}]}]}}
+{"py/object": "data.components.segment.segment.SegmentComponent", "py/state": {"py/tuple": [{"py/tuple": [495, 510]}, {"py/tuple": [394, 459]}]}}
+S
+{"py/object": "data.components.segment.segment.SegmentTypeComponent", "py/state": {"py/reduce": [{"py/type": "data.components.segment.segment.SegmentTypes"}, {"py/tuple": [{"py/tuple": [0, 180, 0]}]}]}}
+{"py/object": "data.components.segment.segment.SegmentComponent", "py/state": {"py/tuple": [{"py/tuple": [394, 459]}, {"py/tuple": [280, 437]}]}}
+S
+{"py/object": "data.components.segment.segment.SegmentTypeComponent", "py/state": {"py/reduce": [{"py/type": "data.components.segment.segment.SegmentTypes"}, {"py/tuple": [{"py/tuple": [0, 180, 0]}]}]}}
+{"py/object": "data.components.segment.segment.SegmentComponent", "py/state": {"py/tuple": [{"py/tuple": [280, 437]}, {"py/tuple": [170, 436]}]}}
+S
+{"py/object": "data.components.segment.segment.SegmentTypeComponent", "py/state": {"py/reduce": [{"py/type": "data.components.segment.segment.SegmentTypes"}, {"py/tuple": [{"py/tuple": [0, 180, 0]}]}]}}
+{"py/object": "data.components.segment.segment.SegmentComponent", "py/state": {"py/tuple": [{"py/tuple": [170, 436]}, {"py/tuple": [85, 470]}]}}
+S
+{"py/object": "data.components.segment.segment.SegmentTypeComponent", "py/state": {"py/reduce": [{"py/type": "data.components.segment.segment.SegmentTypes"}, {"py/tuple": [{"py/tuple": [0, 180, 0]}]}]}}
+{"py/object": "data.components.segment.segment.SegmentComponent", "py/state": {"py/tuple": [{"py/tuple": [85, 470]}, {"py/tuple": [32, 568]}]}}
+S
+{"py/object": "data.components.segment.segment.SegmentTypeComponent", "py/state": {"py/reduce": [{"py/type": "data.components.segment.segment.SegmentTypes"}, {"py/tuple": [{"py/tuple": [0, 180, 0]}]}]}}
+{"py/object": "data.components.segment.segment.SegmentComponent", "py/state": {"py/tuple": [{"py/tuple": [32, 568]}, {"py/tuple": [21, 699]}]}}
+S
+{"py/object": "data.components.segment.segment.SegmentTypeComponent", "py/state": {"py/reduce": [{"py/type": "data.components.segment.segment.SegmentTypes"}, {"py/tuple": [{"py/tuple": [0, 180, 0]}]}]}}
+{"py/object": "data.components.segment.segment.SegmentComponent", "py/state": {"py/tuple": [{"py/tuple": [21, 699]}, {"py/tuple": [68, 815]}]}}
+S
+{"py/object": "data.components.segment.segment.SegmentTypeComponent", "py/state": {"py/reduce": [{"py/type": "data.components.segment.segment.SegmentTypes"}, {"py/tuple": [{"py/tuple": [0, 180, 0]}]}]}}
+{"py/object": "data.components.segment.segment.SegmentComponent", "py/state": {"py/tuple": [{"py/tuple": [68, 815]}, {"py/tuple": [263, 860]}]}}
+S
+{"py/object": "data.components.segment.segment.SegmentTypeComponent", "py/state": {"py/reduce": [{"py/type": "data.components.segment.segment.SegmentTypes"}, {"py/tuple": [{"py/tuple": [0, 180, 0]}]}]}}
+{"py/object": "data.components.segment.segment.SegmentComponent", "py/state": {"py/tuple": [{"py/tuple": [263, 860]}, {"py/tuple": [507, 874]}]}}
+S
+{"py/object": "data.components.segment.segment.SegmentTypeComponent", "py/state": {"py/reduce": [{"py/type": "data.components.segment.segment.SegmentTypes"}, {"py/tuple": [{"py/tuple": [0, 180, 0]}]}]}}
+{"py/object": "data.components.segment.segment.SegmentComponent", "py/state": {"py/tuple": [{"py/tuple": [507, 874]}, {"py/tuple": [720, 875]}]}}
+S
+{"py/object": "data.components.segment.segment.SegmentTypeComponent", "py/state": {"py/reduce": [{"py/type": "data.components.segment.segment.SegmentTypes"}, {"py/tuple": [{"py/tuple": [0, 180, 0]}]}]}}
+{"py/object": "data.components.segment.segment.SegmentComponent", "py/state": {"py/tuple": [{"py/tuple": [720, 875]}, {"py/tuple": [978, 868]}]}}
+S
+{"py/object": "data.components.segment.segment.SegmentTypeComponent", "py/state": {"py/reduce": [{"py/type": "data.components.segment.segment.SegmentTypes"}, {"py/tuple": [{"py/tuple": [0, 180, 0]}]}]}}
+{"py/object": "data.components.segment.segment.SegmentComponent", "py/state": {"py/tuple": [{"py/tuple": [978, 868]}, {"py/tuple": [962, 739]}]}}
+S
+{"py/object": "data.components.segment.segment.SegmentTypeComponent", "py/state": {"py/reduce": [{"py/type": "data.components.segment.segment.SegmentTypes"}, {"py/tuple": [{"py/tuple": [0, 180, 0]}]}]}}
+{"py/object": "data.components.segment.segment.SegmentComponent", "py/state": {"py/tuple": [{"py/tuple": [962, 739]}, {"py/tuple": [943, 741]}]}}
+S
+{"py/object": "data.components.segment.segment.SegmentTypeComponent", "py/state": {"py/reduce": [{"py/type": "data.components.segment.segment.SegmentTypes"}, {"py/tuple": [{"py/tuple": [0, 0, 170]}]}]}}
+{"py/object": "data.components.segment.segment.SegmentComponent", "py/state": {"py/tuple": [{"py/tuple": [864, 726]}, {"py/tuple": [873, 890]}]}}
+S
+{"py/object": "data.components.segment.segment.SegmentTypeComponent", "py/state": {"py/reduce": [{"py/type": "data.components.segment.segment.SegmentTypes"}, {"py/tuple": [{"py/tuple": [0, 0, 170]}]}]}}
+{"py/object": "data.components.segment.segment.SegmentComponent", "py/state": {"py/tuple": [{"py/tuple": [805, 715]}, {"py/tuple": [817, 892]}]}}
+S
+{"py/object": "data.components.segment.segment.SegmentTypeComponent", "py/state": {"py/reduce": [{"py/type": "data.components.segment.segment.SegmentTypes"}, {"py/tuple": [{"py/tuple": [0, 0, 170]}]}]}}
+{"py/object": "data.components.segment.segment.SegmentComponent", "py/state": {"py/tuple": [{"py/tuple": [729, 713]}, {"py/tuple": [737, 891]}]}}
+S
+{"py/object": "data.components.segment.segment.SegmentTypeComponent", "py/state": {"py/reduce": [{"py/type": "data.components.segment.segment.SegmentTypes"}, {"py/tuple": [{"py/tuple": [0, 0, 170]}]}]}}
+{"py/object": "data.components.segment.segment.SegmentComponent", "py/state": {"py/tuple": [{"py/tuple": [647, 728]}, {"py/tuple": [649, 880]}]}}
+S
+{"py/object": "data.components.segment.segment.SegmentTypeComponent", "py/state": {"py/reduce": [{"py/type": "data.components.segment.segment.SegmentTypes"}, {"py/tuple": [{"py/tuple": [0, 0, 170]}]}]}}
+{"py/object": "data.components.segment.segment.SegmentComponent", "py/state": {"py/tuple": [{"py/tuple": [568, 710]}, {"py/tuple": [574, 886]}]}}
+S
+{"py/object": "data.components.segment.segment.SegmentTypeComponent", "py/state": {"py/reduce": [{"py/type": "data.components.segment.segment.SegmentTypes"}, {"py/tuple": [{"py/tuple": [0, 0, 170]}]}]}}
+{"py/object": "data.components.segment.segment.SegmentComponent", "py/state": {"py/tuple": [{"py/tuple": [481, 715]}, {"py/tuple": [474, 899]}]}}
+S
+{"py/object": "data.components.segment.segment.SegmentTypeComponent", "py/state": {"py/reduce": [{"py/type": "data.components.segment.segment.SegmentTypes"}, {"py/tuple": [{"py/tuple": [0, 0, 170]}]}]}}
+{"py/object": "data.components.segment.segment.SegmentComponent", "py/state": {"py/tuple": [{"py/tuple": [425, 714]}, {"py/tuple": [408, 894]}]}}
+S
+{"py/object": "data.components.segment.segment.SegmentTypeComponent", "py/state": {"py/reduce": [{"py/type": "data.components.segment.segment.SegmentTypes"}, {"py/tuple": [{"py/tuple": [0, 0, 170]}]}]}}
+{"py/object": "data.components.segment.segment.SegmentComponent", "py/state": {"py/tuple": [{"py/tuple": [358, 714]}, {"py/tuple": [357, 883]}]}}
+S
+{"py/object": "data.components.segment.segment.SegmentTypeComponent", "py/state": {"py/reduce": [{"py/type": "data.components.segment.segment.SegmentTypes"}, {"py/tuple": [{"py/tuple": [0, 0, 170]}]}]}}
+{"py/object": "data.components.segment.segment.SegmentComponent", "py/state": {"py/tuple": [{"py/tuple": [294, 700]}, {"py/tuple": [279, 884]}]}}
+S
+{"py/object": "data.components.segment.segment.SegmentTypeComponent", "py/state": {"py/reduce": [{"py/type": "data.components.segment.segment.SegmentTypes"}, {"py/tuple": [{"py/tuple": [0, 0, 170]}]}]}}
+{"py/object": "data.components.segment.segment.SegmentComponent", "py/state": {"py/tuple": [{"py/tuple": [237, 701]}, {"py/tuple": [201, 881]}]}}
+S
+{"py/object": "data.components.segment.segment.SegmentTypeComponent", "py/state": {"py/reduce": [{"py/type": "data.components.segment.segment.SegmentTypes"}, {"py/tuple": [{"py/tuple": [0, 0, 170]}]}]}}
+{"py/object": "data.components.segment.segment.SegmentComponent", "py/state": {"py/tuple": [{"py/tuple": [194, 663]}, {"py/tuple": [136, 865]}]}}
+S
+{"py/object": "data.components.segment.segment.SegmentTypeComponent", "py/state": {"py/reduce": [{"py/type": "data.components.segment.segment.SegmentTypes"}, {"py/tuple": [{"py/tuple": [0, 0, 170]}]}]}}
+{"py/object": "data.components.segment.segment.SegmentComponent", "py/state": {"py/tuple": [{"py/tuple": [190, 669]}, {"py/tuple": [17, 800]}]}}
+S
+{"py/object": "data.components.segment.segment.SegmentTypeComponent", "py/state": {"py/reduce": [{"py/type": "data.components.segment.segment.SegmentTypes"}, {"py/tuple": [{"py/tuple": [0, 0, 170]}]}]}}
+{"py/object": "data.components.segment.segment.SegmentComponent", "py/state": {"py/tuple": [{"py/tuple": [190, 665]}, {"py/tuple": [5, 699]}]}}
+S
+{"py/object": "data.components.segment.segment.SegmentTypeComponent", "py/state": {"py/reduce": [{"py/type": "data.components.segment.segment.SegmentTypes"}, {"py/tuple": [{"py/tuple": [0, 0, 170]}]}]}}
+{"py/object": "data.components.segment.segment.SegmentComponent", "py/state": {"py/tuple": [{"py/tuple": [198, 664]}, {"py/tuple": [10, 614]}]}}
+S
+{"py/object": "data.components.segment.segment.SegmentTypeComponent", "py/state": {"py/reduce": [{"py/type": "data.components.segment.segment.SegmentTypes"}, {"py/tuple": [{"py/tuple": [0, 0, 170]}]}]}}
+{"py/object": "data.components.segment.segment.SegmentComponent", "py/state": {"py/tuple": [{"py/tuple": [203, 663]}, {"py/tuple": [26, 503]}]}}
+S
+{"py/object": "data.components.segment.segment.SegmentTypeComponent", "py/state": {"py/reduce": [{"py/type": "data.components.segment.segment.SegmentTypes"}, {"py/tuple": [{"py/tuple": [0, 0, 170]}]}]}}
+{"py/object": "data.components.segment.segment.SegmentComponent", "py/state": {"py/tuple": [{"py/tuple": [92, 420]}, {"py/tuple": [195, 654]}]}}
+S
+{"py/object": "data.components.segment.segment.SegmentTypeComponent", "py/state": {"py/reduce": [{"py/type": "data.components.segment.segment.SegmentTypes"}, {"py/tuple": [{"py/tuple": [0, 0, 170]}]}]}}
+{"py/object": "data.components.segment.segment.SegmentComponent", "py/state": {"py/tuple": [{"py/tuple": [192, 401]}, {"py/tuple": [193, 653]}]}}
+S
+{"py/object": "data.components.segment.segment.SegmentTypeComponent", "py/state": {"py/reduce": [{"py/type": "data.components.segment.segment.SegmentTypes"}, {"py/tuple": [{"py/tuple": [0, 0, 170]}]}]}}
+{"py/object": "data.components.segment.segment.SegmentComponent", "py/state": {"py/tuple": [{"py/tuple": [223, 657]}, {"py/tuple": [285, 401]}]}}
+S
+{"py/object": "data.components.segment.segment.SegmentTypeComponent", "py/state": {"py/reduce": [{"py/type": "data.components.segment.segment.SegmentTypes"}, {"py/tuple": [{"py/tuple": [0, 0, 170]}]}]}}
+{"py/object": "data.components.segment.segment.SegmentComponent", "py/state": {"py/tuple": [{"py/tuple": [282, 643]}, {"py/tuple": [364, 425]}]}}
+S
+{"py/object": "data.components.segment.segment.SegmentTypeComponent", "py/state": {"py/reduce": [{"py/type": "data.components.segment.segment.SegmentTypes"}, {"py/tuple": [{"py/tuple": [0, 0, 170]}]}]}}
+{"py/object": "data.components.segment.segment.SegmentComponent", "py/state": {"py/tuple": [{"py/tuple": [440, 425]}, {"py/tuple": [349, 668]}]}}
+S
+{"py/object": "data.components.segment.segment.SegmentTypeComponent", "py/state": {"py/reduce": [{"py/type": "data.components.segment.segment.SegmentTypes"}, {"py/tuple": [{"py/tuple": [0, 0, 170]}]}]}}
+{"py/object": "data.components.segment.segment.SegmentComponent", "py/state": {"py/tuple": [{"py/tuple": [418, 675]}, {"py/tuple": [487, 463]}]}}
+S
+{"py/object": "data.components.segment.segment.SegmentTypeComponent", "py/state": {"py/reduce": [{"py/type": "data.components.segment.segment.SegmentTypes"}, {"py/tuple": [{"py/tuple": [0, 0, 170]}]}]}}
+{"py/object": "data.components.segment.segment.SegmentComponent", "py/state": {"py/tuple": [{"py/tuple": [550, 473]}, {"py/tuple": [511, 698]}]}}
+S
+{"py/object": "data.components.segment.segment.SegmentTypeComponent", "py/state": {"py/reduce": [{"py/type": "data.components.segment.segment.SegmentTypes"}, {"py/tuple": [{"py/tuple": [0, 0, 170]}]}]}}
+{"py/object": "data.components.segment.segment.SegmentComponent", "py/state": {"py/tuple": [{"py/tuple": [600, 514]}, {"py/tuple": [578, 714]}]}}
+S
+{"py/object": "data.components.segment.segment.SegmentTypeComponent", "py/state": {"py/reduce": [{"py/type": "data.components.segment.segment.SegmentTypes"}, {"py/tuple": [{"py/tuple": [0, 0, 170]}]}]}}
+{"py/object": "data.components.segment.segment.SegmentComponent", "py/state": {"py/tuple": [{"py/tuple": [686, 535]}, {"py/tuple": [646, 719]}]}}
+S
+{"py/object": "data.components.segment.segment.SegmentTypeComponent", "py/state": {"py/reduce": [{"py/type": "data.components.segment.segment.SegmentTypes"}, {"py/tuple": [{"py/tuple": [0, 0, 170]}]}]}}
+{"py/object": "data.components.segment.segment.SegmentComponent", "py/state": {"py/tuple": [{"py/tuple": [682, 539]}, {"py/tuple": [714, 693]}]}}
+S
+{"py/object": "data.components.segment.segment.SegmentTypeComponent", "py/state": {"py/reduce": [{"py/type": "data.components.segment.segment.SegmentTypes"}, {"py/tuple": [{"py/tuple": [0, 0, 170]}]}]}}
+{"py/object": "data.components.segment.segment.SegmentComponent", "py/state": {"py/tuple": [{"py/tuple": [681, 537]}, {"py/tuple": [784, 698]}]}}
+S
+{"py/object": "data.components.segment.segment.SegmentTypeComponent", "py/state": {"py/reduce": [{"py/type": "data.components.segment.segment.SegmentTypes"}, {"py/tuple": [{"py/tuple": [0, 0, 170]}]}]}}
+{"py/object": "data.components.segment.segment.SegmentComponent", "py/state": {"py/tuple": [{"py/tuple": [689, 542]}, {"py/tuple": [864, 674]}]}}
+S
+{"py/object": "data.components.segment.segment.SegmentTypeComponent", "py/state": {"py/reduce": [{"py/type": "data.components.segment.segment.SegmentTypes"}, {"py/tuple": [{"py/tuple": [0, 0, 170]}]}]}}
+{"py/object": "data.components.segment.segment.SegmentComponent", "py/state": {"py/tuple": [{"py/tuple": [674, 541]}, {"py/tuple": [935, 609]}]}}
+S
+{"py/object": "data.components.segment.segment.SegmentTypeComponent", "py/state": {"py/reduce": [{"py/type": "data.components.segment.segment.SegmentTypes"}, {"py/tuple": [{"py/tuple": [0, 0, 170]}]}]}}
+{"py/object": "data.components.segment.segment.SegmentComponent", "py/state": {"py/tuple": [{"py/tuple": [731, 516]}, {"py/tuple": [965, 532]}]}}
+S
+{"py/object": "data.components.segment.segment.SegmentTypeComponent", "py/state": {"py/reduce": [{"py/type": "data.components.segment.segment.SegmentTypes"}, {"py/tuple": [{"py/tuple": [0, 0, 170]}]}]}}
+{"py/object": "data.components.segment.segment.SegmentComponent", "py/state": {"py/tuple": [{"py/tuple": [965, 475]}, {"py/tuple": [715, 461]}]}}
+S
+{"py/object": "data.components.segment.segment.SegmentTypeComponent", "py/state": {"py/reduce": [{"py/type": "data.components.segment.segment.SegmentTypes"}, {"py/tuple": [{"py/tuple": [0, 0, 170]}]}]}}
+{"py/object": "data.components.segment.segment.SegmentComponent", "py/state": {"py/tuple": [{"py/tuple": [734, 409]}, {"py/tuple": [963, 407]}]}}
+S
+{"py/object": "data.components.segment.segment.SegmentTypeComponent", "py/state": {"py/reduce": [{"py/type": "data.components.segment.segment.SegmentTypes"}, {"py/tuple": [{"py/tuple": [0, 0, 170]}]}]}}
+{"py/object": "data.components.segment.segment.SegmentComponent", "py/state": {"py/tuple": [{"py/tuple": [953, 348]}, {"py/tuple": [754, 332]}]}}
+S
+{"py/object": "data.components.segment.segment.SegmentTypeComponent", "py/state": {"py/reduce": [{"py/type": "data.components.segment.segment.SegmentTypes"}, {"py/tuple": [{"py/tuple": [0, 0, 170]}]}]}}
+{"py/object": "data.components.segment.segment.SegmentComponent", "py/state": {"py/tuple": [{"py/tuple": [762, 263]}, {"py/tuple": [967, 260]}]}}
+S
+{"py/object": "data.components.segment.segment.SegmentTypeComponent", "py/state": {"py/reduce": [{"py/type": "data.components.segment.segment.SegmentTypes"}, {"py/tuple": [{"py/tuple": [0, 0, 170]}]}]}}
+{"py/object": "data.components.segment.segment.SegmentComponent", "py/state": {"py/tuple": [{"py/tuple": [975, 199]}, {"py/tuple": [769, 197]}]}}
+S
+{"py/object": "data.components.segment.segment.SegmentTypeComponent", "py/state": {"py/reduce": [{"py/type": "data.components.segment.segment.SegmentTypes"}, {"py/tuple": [{"py/tuple": [0, 0, 170]}]}]}}
+{"py/object": "data.components.segment.segment.SegmentComponent", "py/state": {"py/tuple": [{"py/tuple": [765, 107]}, {"py/tuple": [963, 119]}]}}

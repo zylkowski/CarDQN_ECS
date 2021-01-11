@@ -1,0 +1,6 @@
+{"<class 'rendering.textured.TextureComponent.TextureComponent'>":
+{"Entity(0)": {"py/object": "rendering.textured.TextureComponent.TextureComponent", "textureID": 0}, "Entity(1)": {"py/object": "rendering.textured.TextureComponent.TextureComponent", "textureID": 0}},
+  "<class 'components.position.Position'>": {"Entity(0)": {"py/object": "components.position.Position", "pos": {"py/tuple": [0, 0]}}, "Entity(1)": {"py/object": "components.position.Position", "pos": {"py/tuple": [500, 500]}}},
+  "<class 'components.rotation.Rotation'>": {"Entity(0)": {"py/object": "components.rotation.Rotation", "rotation": 30}, "Entity(1)": {"py/object": "components.rotation.Rotation", "rotation": 30}},
+  "<class 'components.segment.SegmentComponent'>": {"Entity(2)": {"py/object": "components.segment.SegmentComponent", "start": {"py/tuple": [20, 20]}, "end": {"py/tuple": [700, 300]}}, "Entity(3)": {"py/object": "components.segment.SegmentComponent", "start": {"py/tuple": [0, 0]}, "end": {"py/tuple": [100, 600]}}},
+  "<class 'components.segment.SegmentTypeComponent'>": {"Entity(2)": {"py/object": "components.segment.SegmentTypeComponent", "color": {"py/tuple": [0, 255, 0]}}, "Entity(3)": {"py/object": "components.segment.SegmentTypeComponent", "color": {"py/tuple": [0, 0, 255]}}}}
