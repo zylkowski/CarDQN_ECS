@@ -96,6 +96,7 @@ class DQNAgent(ecs.Component):
                 if not done:
                     target = (reward + self.GAMMA * torch.max(self.model.forward(next_state)).item())
                 target_f = self.model.forward(state)
+                print(f"target_f = {target_f}")
                 target_f[0][action] = target
 
                 loss = self.criteria(target_f, self.model.forward(state))

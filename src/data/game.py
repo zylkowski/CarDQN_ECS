@@ -13,6 +13,7 @@ from ray_collision_system import RayCollisionSystem
 import map_saver
 import data.constants
 
+
 class Window:
     def __init__(self, window_size, window_title):
         self.surface = pg.display.set_mode(window_size)
@@ -30,11 +31,10 @@ class Game:
         self.WINDOW = Window(data.constants.SCREEN_SIZE, data.constants.WINDOW_TITLE)
         self.clock = pg.time.Clock()
 
-        self.map_saver = map_saver.MapSaver()
         self.add_systems_to_world()
         if data.constants.MAP_PATH.exists():
             print("loading")
-            self.map_saver.load_map(data.constants.MAP_PATH.__str__())
+            map_saver.MapSaver.load_map(data.constants.MAP_PATH.__str__())
         else:
             EntitySpawnerSystem.spawn_car_entity(physics.Position((500, 500)),
                                                  physics.Rotation(0),
@@ -45,7 +45,7 @@ class Game:
         self.systemManager.add_system(EntitySpawnerSystem())
 
         self.systemManager.add_system(game_state_system.GameStateSystem())
-        self.systemManager.add_system(mode_systems.EditorSystem(self.map_saver))
+        self.systemManager.add_system(mode_systems.EditorSystem())
         self.systemManager.add_system(mode_systems.ControlModeSystem())
 
         self.systemManager.add_system(DQNSystems.DQNStateUpdateSystem())
@@ -70,9 +70,7 @@ class Game:
         while not game_state_quit:
             game_state_quit = self.systemManager.get_system(game_state_system.GameStateSystem).QUIT
             dt = self.clock.tick(60)
-            # print("********************************************")
             self.update(dt)
-            # print("********************************************")
 
     def update(self,dt):
         self.systemManager.update(dt)

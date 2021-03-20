@@ -6,10 +6,7 @@ import data.systems.game_state_system as game_state_system
 from data.systems.entity_spawner_system import EntitySpawnerSystem
 from enum import Enum
 import map_saver
-# import jsonpickle
-import json
-import pathlib
-from abc import ABCMeta, abstractmethod
+
 
 class EditorTools(Enum):
     WALL = "Wall"
@@ -20,13 +17,12 @@ class EditorTools(Enum):
 pg.font.init()
 
 class EditorSystem(ecs.System):
-    def __init__(self,map_saver):
+    def __init__(self):
         super().__init__()
 
         self.FONT = pg.font.SysFont('Arial', 30)
         self.CURRENT_TOOL = EditorTools.WALL
 
-        self.map_saver = map_saver
         self.segment_start = None
 
     def update(self, dt):
@@ -51,7 +47,7 @@ class EditorSystem(ecs.System):
                     if event.key == pg.K_4:
                         self.CURRENT_TOOL = EditorTools.MOVE_CAR
                     if event.key == pg.K_RETURN:
-                        self.map_saver.save_current_map(self.entity_manager)
+                        map_saver.MapSaver.save_current_map(self.entity_manager)
 
                 if event.type == pg.MOUSEBUTTONDOWN:
                     if event.button == 1:
