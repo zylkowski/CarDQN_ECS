@@ -20,8 +20,8 @@ class DQNRewardSystem(ecs.System):
         self.timer += dt
 
         for entity, [DQNAgentData_component,
-                     SegmentRayHolder_component] in self.entity_manager.query([DQNComponents.DQNAgentData,
-                                                                               segment.SegmentRayHolder]):
+                     SegmentRayHolder_component] in self.entity_manager.pairs_for_types(DQNComponents.DQNAgentData,
+                                                                               segment.SegmentRayHolder):
             reward = 10
 
             if self.detect_wall_collision(SegmentRayHolder_component):

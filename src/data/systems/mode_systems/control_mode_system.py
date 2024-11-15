@@ -12,16 +12,20 @@ class ControlModeSystem(ecs.System):
         if game_state_system_instance.MODE == game_state_system.GameModes.CONTROL:
             events = game_state_system_instance.EVENTS
 
-            for entity, [_,
-                         car_control_component] in self.entity_manager.query([car_control.PlayerControlTag,
-                                                                              car_control.CarControllerComponent]):
-                for event in events:
-                    if event.type == pg.KEYDOWN:
-                        if event.key == pg.K_a: car_control_component.steering = 1
-                        if event.key == pg.K_d: car_control_component.steering = -1
-
-                        if event.key == pg.K_w: car_control_component.gas = 1
-                        if event.key == pg.K_s: car_control_component.gas = -1
-                    if event.type == pg.KEYUP:
-                        if event.key == pg.K_a or event.key == pg.K_d: car_control_component.steering = 0
-                        if event.key == pg.K_w or event.key == pg.K_s: car_control_component.gas = 0
+            for entity, components in self.entity_manager.pairs_for_types(car_control.PlayerControlTag, car_control.CarControllerComponent):
+                pass
+                # print("a")
+                # print(components)
+            # for entity, [_,
+            #              car_control_component] in self.entity_manager.query([car_control.PlayerControlTag,
+            #                                                                   car_control.CarControllerComponent]):
+            #     for event in events:
+            #         if event.type == pg.KEYDOWN:
+            #             if event.key == pg.K_a: car_control_component.steering = 1
+            #             if event.key == pg.K_d: car_control_component.steering = -1
+            #
+            #             if event.key == pg.K_w: car_control_component.gas = 1
+            #             if event.key == pg.K_s: car_control_component.gas = -1
+            #         if event.type == pg.KEYUP:
+            #             if event.key == pg.K_a or event.key == pg.K_d: car_control_component.steering = 0
+            #             if event.key == pg.K_w or event.key == pg.K_s: car_control_component.gas = 0

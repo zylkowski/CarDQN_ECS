@@ -21,9 +21,9 @@ class DQNStateUpdateSystem(ecs.System):
             if self.first_loop:
                 for entity, [DQNAgentData_component,
                              Position_component,
-                             Rotation_component] in self.entity_manager.query([DQNComponents.DQNAgentData,
+                             Rotation_component] in self.entity_manager.pairs_for_types(DQNComponents.DQNAgentData,
                                                              physics.Position,
-                                                             physics.Rotation]):
+                                                             physics.Rotation):
                     DQNAgentData_component : DQNComponents.DQNAgentData
                     Position_component: physics.Position
                     Rotation_component: physics.Rotation

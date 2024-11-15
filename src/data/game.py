@@ -12,6 +12,7 @@ from rayPositionUpdateSystem import RayPositionUpdateSystem
 from ray_collision_system import RayCollisionSystem
 import map_saver
 import data.constants
+import os
 
 
 class Window:
@@ -32,7 +33,7 @@ class Game:
         self.clock = pg.time.Clock()
 
         self.add_systems_to_world()
-        if data.constants.MAP_PATH.exists():
+        if os.path.exists(data.constants.MAP_PATH):
             print("loading")
             map_saver.MapSaver.load_map(data.constants.MAP_PATH.__str__())
         else:
@@ -42,7 +43,9 @@ class Game:
 
     
     def add_systems_to_world(self):
+        print("adding systems to world")
         self.systemManager.add_system(EntitySpawnerSystem())
+        self.systemManager.get_system(EntitySpawnerSystem).on_create()
 
         self.systemManager.add_system(game_state_system.GameStateSystem())
         self.systemManager.add_system(mode_systems.EditorSystem())
@@ -69,7 +72,9 @@ class Game:
         game_state_quit = False
         while not game_state_quit:
             game_state_quit = self.systemManager.get_system(game_state_system.GameStateSystem).QUIT
-            dt = self.clock.tick(60)
+            # dt = self.clock.tick(60)
+            # print(dt)
+            dt = 16
             self.update(dt)
 
     def update(self,dt):

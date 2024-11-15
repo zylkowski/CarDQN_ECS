@@ -21,9 +21,9 @@ class DQNRememberSystem(ecs.System):
 
         for entity, [DQNAgent_component,
                      DQNAgentData_component,
-                     _] in self.entity_manager.query([DQNComponents.DQNAgent,
+                     _] in self.entity_manager.pairs_for_types(DQNComponents.DQNAgent,
                                                                            DQNComponents.DQNAgentData,
-                                                                           car_control.CarControllerComponent]):
+                                                                           car_control.CarControllerComponent):
             DQNAgent_component: DQNComponents.DQNAgent
             DQNAgentData_component: DQNComponents.DQNAgentData
 

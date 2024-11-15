@@ -2,7 +2,7 @@ import ecs
 import numpy as np
 
 class Position(ecs.Component):
-    def __init__(self,pos:np.ndarray):
+    def __init__(self,pos):
         self.pos = pos
 
     def __getstate__(self):

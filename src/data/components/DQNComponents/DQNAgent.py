@@ -23,7 +23,7 @@ class Net(nn.Module):
             self.load(self.load_path)
 
     def forward(self, state):
-        state = state.to(torch.device("cpu"))
+        state = state.to(torch.device("cuda"))
         state = F.relu(self.fc1(state))
         state = F.relu(self.fc2(state))
         state = F.relu(self.fc3(state))
@@ -67,7 +67,7 @@ class DQNAgent(ecs.Component):
 
         self.learning_rate = learning_rate
 
-        self.device = torch.device('cpu')
+        self.device = torch.device('cuda')
         self.model = Net(input_dim, action_size, load_path)
         self.model = self.model.to(self.device)
 
@@ -96,7 +96,7 @@ class DQNAgent(ecs.Component):
                 if not done:
                     target = (reward + self.GAMMA * torch.max(self.model.forward(next_state)).item())
                 target_f = self.model.forward(state)
-                print(f"target_f = {target_f}")
+                # print(f"target_f = {target_f}")
                 target_f[0][action] = target
 
                 loss = self.criteria(target_f, self.model.forward(state))
