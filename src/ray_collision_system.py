@@ -54,8 +54,8 @@ class RayCollisionSystem(ecs.System):
             closest_collision = min(list(collision_dict.keys()))
             closest_collision_point = collision_dict[closest_collision][0]
             closest_collision_entity = collision_dict[closest_collision][1]
-            return closest_collision, closest_collision_point, closest_collision_entity
-        return ray_component.length, ray_segment_component.end, None
+            return closest_collision/ray_component.length, closest_collision_point, closest_collision_entity
+        return 1.0, ray_segment_component.end, None
 
 
     @staticmethod

@@ -32,4 +32,6 @@ class DQNActSystem(ecs.System):
             DQNAgentData_component.action = action_index
 
             CarControl_component.gas = DQNActSystem.ALL_ACTIONS[action_index][0]
+            # print(f"{CarControl_component.gas=}")
             CarControl_component.steering = DQNActSystem.ALL_ACTIONS[action_index][1]
+            # print(f"{CarControl_component.steering}")

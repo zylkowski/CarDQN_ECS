@@ -14,16 +14,16 @@ class Net(nn.Module):
         self.input_dim = input_dim
         self.action_size = action_size
 
-        self.fc1 = nn.Linear(input_dim, 7)
-        self.fc2 = nn.Linear(7, 7)
-        self.fc3 = nn.Linear(7, 6)
-        self.fc4 = nn.Linear(6, action_size)
+        self.fc1 = nn.Linear(input_dim, 12)
+        self.fc2 = nn.Linear(12, 8)
+        self.fc3 = nn.Linear(8, 8)
+        self.fc4 = nn.Linear(8, action_size)
 
         if load_path is not None:
-            self.load(self.load_path)
+            self.load(load_path)
 
     def forward(self, state):
-        state = state.to(torch.device("cuda"))
+        # state = state.to(torch.device("cpu"))
         state = F.relu(self.fc1(state))
         state = F.relu(self.fc2(state))
         state = F.relu(self.fc3(state))
@@ -50,6 +50,7 @@ class DQNAgentData(ecs.Component):
 
 
     def get_data_to_remember(self):
+        # print(self.reward)
         return self.state, self.action, self.reward, self.next_state, self.done
 
 class DQNAgent(ecs.Component):
@@ -60,14 +61,16 @@ class DQNAgent(ecs.Component):
 
         self.memory = deque(maxlen=8000)
 
-        self.GAMMA = 0.7
-        self.EPSILON = 1
+        self.GAMMA = 0.8
+        self.EPSILON = 0.998
+        # self.EPSILON = 0.02
         self.EPSILON_DECAY = 0.998
         self.EPSILON_MIN = 0.02
 
         self.learning_rate = learning_rate
 
-        self.device = torch.device('cuda')
+        # self.device = torch.device('cuda')
+        self.device = torch.device('cpu')
         self.model = Net(input_dim, action_size, load_path)
         self.model = self.model.to(self.device)
 
@@ -76,6 +79,7 @@ class DQNAgent(ecs.Component):
         self.criteria = nn.MSELoss()
 
     def remember(self, to_remember):
+        # print(f"remembering: {to_remember}")
         self.memory.append(to_remember)
 
     def act(self, state):
@@ -83,10 +87,13 @@ class DQNAgent(ecs.Component):
             return random.randrange(self.action_size)
         with torch.no_grad():
             act_values = self.model.forward(state)
-        return torch.argmax(act_values).item()
+            res = torch.argmax(act_values).item()
+            # print(f"{res=}")
+            return res
 
     def replay(self, batch_size):
         if batch_size <= len(self.memory):
+            self.model.train()
             minibatch = random.sample(self.memory, batch_size)
 
             for state, action, reward, next_state, done in minibatch:
@@ -95,15 +102,22 @@ class DQNAgent(ecs.Component):
                 target = reward
                 if not done:
                     target = (reward + self.GAMMA * torch.max(self.model.forward(next_state)).item())
+
                 target_f = self.model.forward(state)
                 # print(f"target_f = {target_f}")
+                # print(f"state = {state}")
+                # print(f"nxt_state = {next_state}")
                 target_f[0][action] = target
 
                 loss = self.criteria(target_f, self.model.forward(state))
+                # print(f"{loss=}")
 
                 loss.backward()
                 self.optimizer.step()
 
             if self.EPSILON > self.EPSILON_MIN:
                 self.EPSILON *= self.EPSILON_DECAY
-            print(self.EPSILON)
+
+    def save(self,episode):
+        torch.save(self.model.state_dict(), f"models/model_state_{episode}.pth")
+

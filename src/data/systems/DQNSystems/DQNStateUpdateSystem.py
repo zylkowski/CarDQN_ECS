@@ -3,6 +3,7 @@ import data.components.DQNComponents as DQNComponents
 import data.systems.game_state_system as game_state_system
 import data.components.segment as segment
 import data.components.physics as physics
+import data.components.car_control as control
 import torch
 import numpy as np
 
@@ -16,6 +17,8 @@ class DQNStateUpdateSystem(ecs.System):
 
     def update(self, dt):
         self.entity_manager: ecs.EntityManager
+        self.system_manager: ecs.SystemManager
+
         game_state_system_instance = self.system_manager.get_system(game_state_system.GameStateSystem)
         if game_state_system_instance.MODE == game_state_system.GameModes.LEARNING:
             if self.first_loop:
@@ -60,6 +63,8 @@ class DQNStateUpdateSystem(ecs.System):
                                                                                            segment.SegmentRayHolder)
                 vel_component: physics.Velocity = entity_manager.component_for_entity(DQNEntity,
                                                                                       physics.Velocity)
+                controler_component: control.CarControllerComponent = entity_manager.component_for_entity(DQNEntity,
+                                                                                      control.CarControllerComponent)
                 rot_component: physics.Rotation = entity_manager.component_for_entity(DQNEntity,
                                                                                       physics.Rotation)
 
@@ -69,9 +74,9 @@ class DQNStateUpdateSystem(ecs.System):
                         ray_entity, segment.SegmentRayComponent)
                     state.append(ray_component.collision_distance)
 
-                state.append(vel_component.vel[0])
-                state.append(vel_component.vel[1])
-                state.append(rot_component.rotation)
+                state.append((vel_component.vel[0] + controler_component.max_speed)/(2*controler_component.max_speed))
+                state.append((vel_component.vel[1] + controler_component.max_speed)/(2*controler_component.max_speed))
+                state.append((rot_component.rotation % 360)/360)
                 state = DQNStateUpdateSystem.state_to_pytorch(state)
 
                 if update_next_state:

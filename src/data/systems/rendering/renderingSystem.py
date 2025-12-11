@@ -4,7 +4,7 @@ import ecs
 class RenderingSystem(ecs.System):
     queue = {}
     every_frame_queue = {}
-    fill_color = (255,255,255)
+    fill_color = (0,0,0)
 
     def __init__(self, surface : py.Surface):
         super(RenderingSystem, self).__init__()

@@ -1,3 +1,4 @@
+from data.systems.DQNSystems.DQNActSystem import DQNActSystem
 import ecs
 import data.components.segment as segment
 import data.components.physics as physics
@@ -6,7 +7,7 @@ import data.components.car_control as car_control
 import data.components.DQNComponents as DQNComponents
 
 class EntitySpawnerSystem(ecs.System):
-    entity_manager = None
+    entity_manager: ecs.EntityManager
 
     def on_create(self):
         EntitySpawnerSystem.entity_manager = self.entity_manager
@@ -58,6 +59,6 @@ class EntitySpawnerSystem(ecs.System):
         EntitySpawnerSystem.entity_manager.add_component(carEntity, car_control.PlayerControlTag())
 
         EntitySpawnerSystem.entity_manager.add_component(carEntity, DQNComponents.DQNAgentData())
-        EntitySpawnerSystem.entity_manager.add_component(carEntity, DQNComponents.DQNAgent(0.001,19,6))
+        EntitySpawnerSystem.entity_manager.add_component(carEntity, DQNComponents.DQNAgent(0.001,19,len(DQNActSystem.ALL_ACTIONS)))
         for angle in range(-40, 40, 5):
             EntitySpawnerSystem.add_ray_to_entity(carEntity, 400, angle)

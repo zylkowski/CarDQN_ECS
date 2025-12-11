@@ -26,7 +26,7 @@ class SegmentRenderingSystem(ecs.System):
     def renderSegment(screen: pygame.Surface,
                       segmentComponent: segment.SegmentComponent,
                       segmentType: segment.SegmentTypeComponent):
-        pygame.draw.line(screen, segmentType.type.value, segmentComponent.start, segmentComponent.end, 3)
+        pygame.draw.aaline(screen, segmentType.type.value, segmentComponent.start, segmentComponent.end, 1)
 
     @staticmethod
     def renderSegment_2(screen: pygame.Surface,

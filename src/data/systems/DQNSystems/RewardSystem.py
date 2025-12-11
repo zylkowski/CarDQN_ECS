@@ -1,5 +1,6 @@
 import ecs
 import data.systems.game_state_system as game_state_system
+from data.systems.DQNSystems.DQNActSystem import DQNActSystem
 import data.components.DQNComponents as DQNComponents
 import data.components.segment as segment
 from ray_collision_system import RayCollisionSystem
@@ -22,16 +23,20 @@ class DQNRewardSystem(ecs.System):
         for entity, [DQNAgentData_component,
                      SegmentRayHolder_component] in self.entity_manager.pairs_for_types(DQNComponents.DQNAgentData,
                                                                                segment.SegmentRayHolder):
-            reward = 10
-
-            if self.detect_wall_collision(SegmentRayHolder_component):
-                reward = -1000
-                DQNAgentData_component.reward = reward
-                DQNAgentData_component.done = True
-                continue
-
             DQNAgentData_component: DQNComponents.DQNAgentData
             SegmentRayHolder_component: segment.SegmentRayHolder
+            # reward = 10
+            action_index = DQNAgentData_component.action 
+            # reward = 10 if DQNActSystem.ALL_ACTIONS[action_index][0] != 0 else 0
+            reward = 0
+
+            if self.detect_wall_collision(SegmentRayHolder_component):
+                reward = -200
+                DQNAgentData_component.reward = reward
+                DQNAgentData_component.done = True
+                self.timer = 0
+                continue
+
             middle_ray_entity = DQNRewardSystem.get_entity_middle_ray(SegmentRayHolder_component)
             middle_ray_component = self.entity_manager.component_for_entity(middle_ray_entity,segment.SegmentRayComponent)
 
@@ -47,7 +52,9 @@ class DQNRewardSystem(ecs.System):
             if closest_collision_entity not in DQNAgentData_component.passed_checkpoints and closest_collision_entity is not None:
                 DQNAgentData_component.passed_checkpoints[closest_collision_entity] = self.timer
                 time_since_last_checkpoint = self.timer-DQNAgentData_component.last_checkpoint_time
-                reward += 1e4/time_since_last_checkpoint
+                reward += min(1e4/time_since_last_checkpoint,120)
+                print(f"hit checkpoint, reward = {reward}")
+
                 DQNAgentData_component.last_checkpoint_time = self.timer
 
 
@@ -59,7 +66,7 @@ class DQNRewardSystem(ecs.System):
         for ray in SegmentRayHolder_component.rays:
             ray_component: segment.SegmentRayComponent = self.entity_manager.component_for_entity(ray,
                                                                                                   segment.SegmentRayComponent)
-            if ray_component.collision_distance < 30:
+            if ray_component.collision_distance < 0.05:
                 return True
 
 

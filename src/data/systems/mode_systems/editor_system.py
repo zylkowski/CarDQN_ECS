@@ -20,7 +20,7 @@ class EditorSystem(ecs.System):
     def __init__(self):
         super().__init__()
 
-        self.FONT = pg.font.SysFont('Arial', 30)
+        self.FONT = pg.font.SysFont('Arial', 20)
         self.CURRENT_TOOL = EditorTools.WALL
 
         self.segment_start = None
